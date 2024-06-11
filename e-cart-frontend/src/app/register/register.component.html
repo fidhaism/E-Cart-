@@ -1,0 +1,44 @@
+<!-- register.component.html -->
+
+<div class="register-container">
+  <div class="register-card">
+    
+    <div class="register-image">
+      <img src="https://cdn.dribbble.com/users/3821672/screenshots/7172846/media/bdcf195a8ceaf94cd2e55ee274095c91.gif" alt="Registration">
+    </div>
+    
+    <div class="register-form">
+      <h2>Register</h2>
+      <form [formGroup]="registerForm">
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input formControlName="username" type="text" class="form-control" id="username" placeholder="User Name">
+          <div  *ngIf="this.registerForm.get('username')?.errors && this.registerForm.get('username')?.touched" class="text-danger fw-bolder">
+            Invalid Username
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input formControlName="email" type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          <div  *ngIf="this.registerForm.get('email')?.errors && this.registerForm.get('email')?.touched"  class="text-danger fw-bolder">
+            Invalid Email
+          </div>          
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input formControlName="password" type="password" class="form-control" id="password" placeholder="Enter your password" required>
+          <div  *ngIf="this.registerForm.get('password')?.errors && this.registerForm.get('password')?.touched"    class="text-danger fw-bolder">
+            Invalid Password
+          </div>
+        </div>
+        
+        <button type="submit" class="btn-register">Register</button>
+      </form>
+      <p class="login-link">Already have an account? <a routerLink="/user/login">Login</a></p>
+    </div>
+  
+  </div>
+</div>

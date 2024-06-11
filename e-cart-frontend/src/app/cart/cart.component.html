@@ -1,0 +1,59 @@
+<div class="container py-5">
+    <h2 class="mb-4">Shopping Cart</h2>
+    <div class="table-responsive">
+      <table class="table table-hover mt-5 shadow-sm">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product</th>
+            <th scope="col">Image</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <th scope="row">1</th>
+            <td>Tshirt</td>
+            <td><img src="https://th.bing.com/th/id/R.6c3ddd4f609acc5e3fff3e13255cfc15?rik=nMtuon3w6BIpiw&riu=http%3a%2f%2finikweb.com%2fwp-content%2fuploads%2f2015%2f02%2ft473kellygreen.jpg&ehk=ngEG5J4NY4mngHySwtGScfJOpm%2bFsWS9P0TPNj15Qww%3d&risl=&pid=ImgRaw&r=0" alt="Product Image" class="img-fluid product-image"></td>
+            <td>$ 700</td>
+            <td>
+              <input type="number" min="1" class="form-control quantity-input">
+            </td>
+            <td></td>
+            <td>
+              <button class="btn btn-danger btn-sm" >
+                <i class="fas fa-trash-alt"></i> Remove
+              </button>
+            </td>
+          </tr>
+
+          <tr >
+            <th scope="row">2</th>
+            <td>Camo Pant</td>
+            <td><img src="https://shop.militaryrange.eu/Content/custom/img_products/11840020-1.jpg" alt="Product Image" class="img-fluid product-image"></td>
+            <td>$ 1700</td>
+            <td>
+              <input type="number" min="1" class="form-control quantity-input">
+            </td>
+            <td></td>
+            <td>
+              <button class="btn btn-danger btn-sm" >
+                <i class="fas fa-trash-alt"></i> Remove
+              </button>
+            </td>
+          </tr>
+          <tr >
+            <td colspan="7" class="text-center">No items in the cart</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-end mt-4">
+      <h4>Total: </h4>
+      <button class="btn btn-success">Proceed to Checkout</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,18 @@
+.empty-wishlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100%; /* Make sure the container takes full height */
+  }
+  
+  .empty-wishlist img {
+    max-width: 200px; /* Adjust image width as needed */
+    margin-bottom: 20px; /* Add some space below the image */
+  }
+  
+  .empty-wishlist p {
+    font-size: 1.2em; /* Increase font size for the message */
+    color: #555; /* Adjust text color */
+  }
+  

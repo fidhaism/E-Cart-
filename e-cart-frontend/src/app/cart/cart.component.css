@@ -1,0 +1,51 @@
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.table {
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    padding: 42px; /* Increase the padding to increase the width of the rows */
+}
+
+.table-dark th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.product-image {
+    max-width: 100px; /* Set the max width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.quantity-input {
+    width: 60px;
+}
+
+.text-end {
+    margin-top: 20px;
+}
+
+h2.mb-4 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
